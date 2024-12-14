@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Gallery</title>
+    <style>
+        .product {
+            margin: 10px 0;
+        }
+        .pagination {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Gallery</h1>
+
+    <!-- Filter Section -->
+    <div>
+        <label for="category">Category:</label>
+        <select id="category">
+            <option value="">All</option>
+            <option value="electronics">Electronics</option>
+            <option value="furniture">Furniture</option>
+        </select>
+
+        <label for="sortByPrice">Sort by Price:</label>
+        <select id="sortByPrice">
+            <option value="asc">Price: Low to High</option>
+            <option value="desc">Price: High to Low</option>
+        </select>
+
+        <label for="sortByName">Sort by Name:</label>
+        <select id="sortByName">
+            <option value="asc">Name: A to Z</option>
+            <option value="desc">Name: Z to A</option>
+        </select>
+    </div>
+
+    <!-- Product List -->
+    <ul id="productList"></ul>
+
+    <!-- Pagination -->
+    <div class="pagination">
+        <button id="prevPage">Previous</button>
+        <span id="pageNumber">Page 1</span>
+        <button id="nextPage">Next</button>
+    </div>
+
+    <script src="script3.js"></script>
+</body>
+</html>
